@@ -28,10 +28,13 @@
 }
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    // Log that the screen was touched.
     NSLog(@"Oh, someone is touching the screen!!");
 }
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    // Randomize transparency and log that touching has stopped.
+    self.view.alpha = ((double)arc4random() / 0x100000000);
     NSLog(@"Yay, the touching stopped!");
 }
 - (void)didReceiveMemoryWarning
