@@ -18,8 +18,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    // Make mauve background.
+    self.view.backgroundColor = [UIColor colorWithRed:0.80 green:0.60 blue:0.65 alpha:1.0];
 }
-
+- (void)loadView
+{
+    UIView *view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.view = view;
+}
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"Oh, someone is touching the screen!!");
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
