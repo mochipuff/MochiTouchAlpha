@@ -30,6 +30,10 @@
 {
     NSLog(@"Oh, someone is touching the screen!!");
 }
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"Yay, the touching stopped!");
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
