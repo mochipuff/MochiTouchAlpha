@@ -1,6 +1,6 @@
 MochiTouchAlpha
 ===============
 
-The result of my TryiOS Lesson 1, Section 1.
+The result of my TryiOS through Lesson 2.
 
-http://tryios.codeschool.com/levels/1/sections/1
+http://tryios.codeschool.com/
