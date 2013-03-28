@@ -10,4 +10,12 @@
 
 @interface MLPViewController : UIViewController
 
+@property (weak, nonatomic) UIButton *randomPercentButton;
+
+@property (weak, nonatomic) UIButton *fiftyPercentButton;
+
+@property (weak, nonatomic) UIButton *hundredPercentButton;
+
+- (void)buttonPressed:(UIButton *)sender;
+
 @end
